@@ -1,0 +1,64 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <title>Salesforce Lightning Design System Trailhead Module</title>
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:include pageName="LDS_CommonCss" />
+  </head>
+  <body>
+    <div class="slds">
+      <c:LDS_SectionHeader title="Tabs - Default" />
+      <div class="slds-tabs--default">
+        <ul class="slds-tabs--default__nav" role="tablist">
+          <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation">
+            <a href="#" role="tab" tabindex="0" aria-selected="true">Item One</a>
+          </li>
+          <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation">
+            <a href="#" role="tab" tabindex="-1" aria-selected="false">Item Two</a>
+          </li>
+          <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation">
+            <a href="#" role="tab" tabindex="-1" aria-selected="false">Item Three</a>
+          </li>
+        </ul>
+        <div class="slds-tabs__content slds-show" role="tabpanel">
+          <h2>Item One Content</h2>
+        </div>
+        <div class="slds-tabs__content slds-hide" role="tabpanel">
+          <h2>Item Two Content</h2>
+        </div>
+        <div class="slds-tabs__content slds-hide" role="tabpanel">
+          <h2>Item Three Content</h2>
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Tabs - Scoped" />
+      <div class="slds-tabs--scoped">
+        <ul class="slds-tabs--scoped__nav" role="tablist">
+          <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation">
+            <a href="#" role="tab" tabindex="0" aria-selected="true">Item One</a>
+          </li>
+          <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation">
+            <a href="#" role="tab" tabindex="-1" aria-selected="false">Item Two</a>
+          </li>
+          <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation">
+            <a href="#" role="tab" tabindex="-1" aria-selected="false">Item Three</a>
+          </li>
+        </ul>
+        <div class="slds-tabs__content slds-show" role="tabpanel">
+          <h2>Item One Content</h2>
+        </div>
+        <div class="slds-tabs__content slds-hide" role="tabpanel">
+          <h2>Item Two Content</h2>
+        </div>
+        <div class="slds-tabs__content slds-hide" role="tabpanel">
+          <h2>Item Three Content</h2>
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+    </div>
+  </body>
+</html>
+</apex:page>

@@ -1,0 +1,44 @@
+<apex:page >
+  <style>
+    .section-header {
+      padding-left: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: solid 1px #333333;
+    }
+    
+    .section-header h1 {
+      font-size: 20px;
+      color: #5C2FDA;
+    }
+
+    .components-margin {
+      margin: 50px 0;
+    }
+
+    .demo--inverse {
+      background-color: #16325c;
+      padding: 20px;
+    }
+
+    .demo-space {
+      margin: 20px 0;
+    }
+
+    .demo-container .slds-col,
+    .demo-container .slds-col--padded,
+    .demo-container > div > div,
+    .demo-container div, {
+      text-align: center;
+      line-height: 2rem;
+      background-color: #1589ee;
+      color: #fff;
+      box-shadow: rgba(0,0,0,0.1) 0 0 0 1px inset;
+    }
+
+    .demo--alert > div,
+    .demo--margin > div {
+      margin: 10px 0;
+    }
+  </style>
+</apex:page>

@@ -1,0 +1,40 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <title>Salesforce Lightning Design System Trailhead Module</title>
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:include pageName="LDS_CommonCss" />
+  </head>
+  <body>
+    <div class="slds">
+      <c:LDS_SectionHeader title="Images" />
+      <span class="slds-avatar slds-avatar--x-small">
+        <img src="http://www.lightningdesignsystem.com/assets/images/company1.jpg" alt="company name" />
+      </span>
+      <span class="slds-avatar slds-avatar--small">
+        <img src="http://www.lightningdesignsystem.com/assets/images/company1.jpg" alt="company name" />
+      </span>
+      <span class="slds-avatar slds-avatar--medium">
+        <img src="http://www.lightningdesignsystem.com/assets/images/company1.jpg" alt="company name" />
+      </span>
+      <span class="slds-avatar slds-avatar--large">
+        <img src="http://www.lightningdesignsystem.com/assets/images/company1.jpg" alt="company name" />
+      </span>
+      <span class="slds-avatar slds-avatar--circle slds-avatar--x-small">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/avatar2.jpg')}" alt="person name" />
+      </span>
+      <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/avatar2.jpg')}" alt="person name" />
+      </span>
+      <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/avatar2.jpg')}" alt="person name" />
+      </span>
+      <span class="slds-avatar slds-avatar--circle slds-avatar--large">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/avatar2.jpg')}" alt="person name" />
+      </span>
+      <!-- Margin -->
+      <div class="components-margin" />
+    </div>
+  </body>
+</html>
+</apex:page>

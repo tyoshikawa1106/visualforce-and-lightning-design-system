@@ -1,0 +1,103 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <title>Salesforce Lightning Design System Trailhead Module</title>
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:include pageName="LDS_CommonCss" />
+  </head>
+  <body>
+    <div class="slds">
+      <c:LDS_SectionHeader title="Buttons Group - Base" />
+      <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button--neutral">Refresh</button>
+        <button class="slds-button slds-button--neutral">Edit</button>
+        <button class="slds-button slds-button--neutral">Save</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">More Actions</span>
+        </button>
+      </div>
+      <div class="slds-button-group demo-space" role="group">
+        <button class="slds-button slds-button--neutral">New Lead</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">More Actions</span>
+        </button>
+      </div>
+      <div class="slds-button-group demo-space" role="group">
+        <button class="slds-button slds-button--neutral" disabled="">Refresh</button>
+        <button class="slds-button slds-button--neutral">Edit</button>
+        <button class="slds-button slds-button--neutral slds-button--last">Save</button>
+        <button class="slds-button slds-button--icon-border-filled" disabled="">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">More Actions</span>
+        </button>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Buttons Group - Inverse" />
+      <div class="demo--inverse">
+        <div class="slds-button-group" role="group">
+          <button class="slds-button slds-button--inverse">Refresh</button>
+          <button class="slds-button slds-button--inverse">Edit</button>
+          <button class="slds-button slds-button--inverse">Save</button>
+          <button class="slds-button slds-button--icon-border">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+            </svg>
+            <span class="slds-assistive-text">View More</span>
+          </button>
+        </div>
+        <div class="slds-button-group demo-space" role="group">
+          <button class="slds-button slds-button--inverse" disabled="">Refresh</button>
+          <button class="slds-button slds-button--inverse">Edit</button>
+          <button class="slds-button slds-button--inverse slds-button--last">Save</button>
+          <button class="slds-button slds-button--icon-border" disabled="">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+            </svg>
+            <span class="slds-assistive-text">View More</span>
+          </button>
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Buttons Group - Icon Group" />
+      <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button--icon-border slds-not-selected">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#chart')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Chart</span>
+        </button>
+        <button class="slds-button slds-button--icon-border slds-is-selected">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Filter List</span>
+        </button>
+        <button class="slds-button slds-button--icon-more">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#sort')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Sort</span>
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">More</span>
+        </button>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+    </div>
+  </body>
+</html>
+</apex:page>

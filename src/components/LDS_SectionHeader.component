@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="title" type="String" description="" />
+  <div class="section-header">
+    <h1><apex:outputText value="{!title}" /></h1>
+  </div>
+</apex:component>

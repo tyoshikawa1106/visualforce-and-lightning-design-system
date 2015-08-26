@@ -1,0 +1,81 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <title>Salesforce Lightning Design System Trailhead Module</title>
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:include pageName="LDS_CommonCss" />
+  </head>
+  <body>
+    <div class="slds">
+      <c:LDS_SectionHeader title="Spinners - Base" />
+      <div class="slds-spinner--small">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Medium" />
+      <div class="slds-spinner--medium">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Large" />
+      <div class="slds-spinner--large">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Brand Small" />
+      <div class="slds-spinner--small">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner_brand.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Brand Medium" />
+      <div class="slds-spinner--medium">
+        <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner_brand.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Brand Large" />
+      <div class="slds-spinner--large">
+        <img src="{!URLFOR($Resource.SLDS080, 'assets/images/spinners/slds_spinner_brand.gif')}" alt="Loading..." />
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Inverse Small" />
+      <div class="demo--inverse">
+        <div class="slds-spinner--small">
+          <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner_inverse.gif')}" alt="Loading..." />
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Inverse Medium" />
+      <div class="demo--inverse">
+        <div class="slds-spinner--medium">
+          <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner_inverse.gif')}" alt="Loading..." />
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+
+      <c:LDS_SectionHeader title="Spinners - Inverse Large" />
+      <div class="demo--inverse">
+        <div class="slds-spinner--large">
+          <img src="{!URLFOR($Resource.SLDS080, '/assets/images/spinners/slds_spinner_inverse.gif')}" alt="Loading..." />
+        </div>
+      </div>
+      <!-- Margin -->
+      <div class="components-margin" />
+    </div>
+  </body>
+</html>
+</apex:page>
