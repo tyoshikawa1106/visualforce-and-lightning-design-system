@@ -1,314 +1,311 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <head>
-    <title>Salesforce Lightning Design System Trailhead Module</title>
-    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <apex:include pageName="LDS_CommonCss" />
-  </head>
-  <body>
-    <div class="slds">
-      <c:LDS_SectionHeader title="Page Headers - Record Home" />
-      <div class="slds-page-header">
-        <div class="slds-grid">
-          <div class="slds-col slds-has-flexi-truncate">
-            <div class="slds-media">
-              <div class="slds-media__figure">
-                <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-user">
-                  <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#user')}"></use>
-                </svg>
+  <apex:composition template="LDS_ApplicationTemplate">
+    <apex:define name="content">
+      <div class="slds">
+        <c:LDS_SectionHeader title="Page Headers - Record Home" />
+        <div class="slds-page-header">
+          <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+              <div class="slds-media">
+                <div class="slds-media__figure">
+                  <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-user">
+                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#user')}"></use>
+                  </svg>
+                </div>
+                <div class="slds-media__body">
+                  <p class="slds-text-heading--label">Record Type</p>
+                  <div class="slds-grid">
+                    <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Record Title">Record Title</h1>
+                    <div class="slds-col slds-shrink-none">
+                      <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+                        <span class="slds-text-not-selected">
+                          <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
+                          </svg>Follow</span>
+                        <span class="slds-text-selected">
+                          <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                          </svg>Following</span>
+                        <span class="slds-text-selected-focus">
+                          <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                          </svg>Unfollow</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="slds-media__body">
-                <p class="slds-text-heading--label">Record Type</p>
-                <div class="slds-grid">
-                  <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Record Title">Record Title</h1>
-                  <div class="slds-col slds-shrink-none">
-                    <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
-                      <span class="slds-text-not-selected">
-                        <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-                          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#add')}"></use>
-                        </svg>Follow</span>
-                      <span class="slds-text-selected">
-                        <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-                          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
-                        </svg>Following</span>
-                      <span class="slds-text-selected-focus">
-                        <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-                          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
-                        </svg>Unfollow</span>
+            </div>
+            <div class="slds-col slds-no-flex slds-align-bottom">
+              <div class="slds-button-group" role="group">
+                <button class="slds-button slds-button--neutral">Edit</button>
+                <button class="slds-button slds-button--neutral">Delete</button>
+                <button class="slds-button slds-button--neutral">Clone</button>
+                <div class="slds-button--last">
+                  <button class="slds-button slds-button--icon-border-filled">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slds-grid slds-page-header__detail-row">
+            <div class="slds-col--padded slds-size--1-of-4">
+              <dl>
+                <dt>
+                  <p class="slds-truncate" title="Field 1">Field 1</p>
+                </dt>
+                <dd>
+                  <p class="slds-text-body--regular slds-truncate" title="Description that demonstrates truncation with a long text field">
+                    Description that demonstrates truncation with a long text field
+                  </p>
+                </dd>
+              </dl>
+            </div>
+            <div class="slds-col--padded slds-size--1-of-4">
+              <dl>
+                <dt>
+                  <p class="slds-text-heading--label slds-truncate" title="Field2 (3)">Field 2 (3)
+                    <button class="slds-button slds-button--icon-bare">
+                      <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                        <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                      </svg>
+                      <span class="slds-assistive-text">More Actions</span>
+                    </button>
+                  </p>
+                </dt>
+                <dd>
+                  <p class="slds-text-body--regular">Multiple Values</p>
+                </dd>
+              </dl>
+            </div>
+            <div class="slds-col--padded slds-size--1-of-4">
+              <dl>
+                <dt>
+                  <p class="slds-text-heading--label slds-truncate" title="Field 3">Field 3</p>
+                </dt>
+                <dd><a href="#">Hyperlink</a></dd>
+              </dl>
+            </div>
+            <div class="slds-col--padded slds-size--1-of-4">
+              <dl>
+                <dt>
+                  <p class="slds-text-heading--label slds-truncate" title="Field 4">Field 4</p>
+                </dt>
+                <dd>
+                  <p>
+                    <span>Description (2-line truncation—must use JS to t...</span>
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!-- Margin -->
+        <div class="components-margin" />
+
+        <c:LDS_SectionHeader title="Page Headers - Object Home" />
+        <div class="slds-page-header">
+          <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+              <p class="slds-text-heading--label">Leads</p>
+              <div class="slds-grid">
+                <div class="slds-grid slds-type-focus slds-no-space">
+                  <h1 class="slds-text-heading--medium slds-truncate" title="My Leads (truncates)">My Leads (truncates)</h1>
+                  <button class="slds-button slds-button--icon-bare slds-shrink-none slds-align-middle slds-m-left--x-small">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">View More</span>
+                  </button>
+                </div>
+                <button class="slds-button slds-button--icon-more slds-shrink-none slds-m-left--large" aria-haspopup="true">
+                  <svg aria-hidden="true" class="slds-button__icon">
+                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Settings</span>
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                  </svg>
+                </button>
+                <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
+              </div>
+            </div>
+            <div class="slds-col slds-no-flex slds-align-bottom">
+              <div class="slds-grid">
+                <div class="slds-button-space-left">
+                  <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Table</span>
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slds-button-group slds-button-space-left" role="group">
+                  <button class="slds-button slds-button--icon-border">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#chart')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Chart</span>
+                  </button>
+                  <button class="slds-button slds-button--icon-border">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Filter List</span>
+                  </button>
+                  <button class="slds-button slds-button--icon-more">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#sort')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Sort</span>
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">More</span>
+                  </button>
+                </div>
+                <div class="slds-button-group" role="group">
+                  <button class="slds-button slds-button--neutral">New Lead</button>
+                  <div class="slds-button--last">
+                    <button class="slds-button slds-button--icon-border-filled">
+                      <svg aria-hidden="true" class="slds-button__icon">
+                        <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                      </svg>
+                      <span class="slds-assistive-text">More Actions</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slds-col slds-no-flex slds-align-bottom">
-            <div class="slds-button-group" role="group">
-              <button class="slds-button slds-button--neutral">Edit</button>
-              <button class="slds-button slds-button--neutral">Delete</button>
-              <button class="slds-button slds-button--neutral">Clone</button>
-              <div class="slds-button--last">
-                <button class="slds-button slds-button--icon-border-filled">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">More</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          <p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Name</p>
         </div>
-        <div class="slds-grid slds-page-header__detail-row">
-          <div class="slds-col--padded slds-size--1-of-4">
-            <dl>
-              <dt>
-                <p class="slds-truncate" title="Field 1">Field 1</p>
-              </dt>
-              <dd>
-                <p class="slds-text-body--regular slds-truncate" title="Description that demonstrates truncation with a long text field">
-                  Description that demonstrates truncation with a long text field
-                </p>
-              </dd>
-            </dl>
-          </div>
-          <div class="slds-col--padded slds-size--1-of-4">
-            <dl>
-              <dt>
-                <p class="slds-text-heading--label slds-truncate" title="Field2 (3)">Field 2 (3)
-                  <button class="slds-button slds-button--icon-bare">
-                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
-                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                    </svg>
-                    <span class="slds-assistive-text">More Actions</span>
-                  </button>
-                </p>
-              </dt>
-              <dd>
-                <p class="slds-text-body--regular">Multiple Values</p>
-              </dd>
-            </dl>
-          </div>
-          <div class="slds-col--padded slds-size--1-of-4">
-            <dl>
-              <dt>
-                <p class="slds-text-heading--label slds-truncate" title="Field 3">Field 3</p>
-              </dt>
-              <dd><a href="#">Hyperlink</a></dd>
-            </dl>
-          </div>
-          <div class="slds-col--padded slds-size--1-of-4">
-            <dl>
-              <dt>
-                <p class="slds-text-heading--label slds-truncate" title="Field 4">Field 4</p>
-              </dt>
-              <dd>
-                <p>
-                  <span>Description (2-line truncation—must use JS to t...</span>
-                </p>
-              </dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Page Headers - Object Home" />
-      <div class="slds-page-header">
-        <div class="slds-grid">
-          <div class="slds-col slds-has-flexi-truncate">
-            <p class="slds-text-heading--label">Leads</p>
-            <div class="slds-grid">
-              <div class="slds-grid slds-type-focus slds-no-space">
-                <h1 class="slds-text-heading--medium slds-truncate" title="My Leads (truncates)">My Leads (truncates)</h1>
-                <button class="slds-button slds-button--icon-bare slds-shrink-none slds-align-middle slds-m-left--x-small">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">View More</span>
-                </button>
-              </div>
-              <button class="slds-button slds-button--icon-more slds-shrink-none slds-m-left--large" aria-haspopup="true">
-                <svg aria-hidden="true" class="slds-button__icon">
-                  <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-                </svg>
-                <span class="slds-assistive-text">Settings</span>
-                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-                  <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                </svg>
-              </button>
-              <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
+        <c:LDS_SectionHeader title="Page Headers - Related List" />
+        <div class="slds-page-header">
+          <nav class="slds-m-bottom--xx-small" role="navigation">
+            <p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
+            <ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
+              <li class="slds-list__item slds-text-heading--label"><a href="#">Accounts</a></li>
+              <li class="slds-list__item slds-text-heading--label"><a href="#">Company One</a></li>
+            </ol>
+          </nav>
+          <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+              <h1 class="slds-text-heading--medium slds-truncate" title="Contacts (will truncate)">Contacts (will truncate)</h1>
             </div>
-          </div>
-          <div class="slds-col slds-no-flex slds-align-bottom">
-            <div class="slds-grid">
-              <div class="slds-button-space-left">
-                <button class="slds-button slds-button--icon-more" aria-haspopup="true">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Table</span>
-                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="slds-button-group slds-button-space-left" role="group">
-                <button class="slds-button slds-button--icon-border">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#chart')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Chart</span>
-                </button>
-                <button class="slds-button slds-button--icon-border">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Filter List</span>
-                </button>
-                <button class="slds-button slds-button--icon-more">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#sort')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Sort</span>
-                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">More</span>
-                </button>
-              </div>
-              <div class="slds-button-group" role="group">
-                <button class="slds-button slds-button--neutral">New Lead</button>
-                <div class="slds-button--last">
-                  <button class="slds-button slds-button--icon-border-filled">
+            <div class="slds-col slds-no-flex slds-align-bottom">
+              <div class="slds-grid">
+                <div class="slds-button-space-left" aria-haspopup="true">
+                  <button class="slds-button slds-button--icon-more" aria-haspopup="true">
                     <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Table</span>
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
                       <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
                     </svg>
-                    <span class="slds-assistive-text">More Actions</span>
                   </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Name</p>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
-
-      <c:LDS_SectionHeader title="Page Headers - Related List" />
-      <div class="slds-page-header">
-        <nav class="slds-m-bottom--xx-small" role="navigation">
-          <p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
-          <ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
-            <li class="slds-list__item slds-text-heading--label"><a href="#">Accounts</a></li>
-            <li class="slds-list__item slds-text-heading--label"><a href="#">Company One</a></li>
-          </ol>
-        </nav>
-        <div class="slds-grid">
-          <div class="slds-col slds-has-flexi-truncate">
-            <h1 class="slds-text-heading--medium slds-truncate" title="Contacts (will truncate)">Contacts (will truncate)</h1>
-          </div>
-          <div class="slds-col slds-no-flex slds-align-bottom">
-            <div class="slds-grid">
-              <div class="slds-button-space-left" aria-haspopup="true">
-                <button class="slds-button slds-button--icon-more" aria-haspopup="true">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Table</span>
-                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                </button>
-                <div id="menu1" class="slds-popover slds-hide">
-                  <div class="slds-dropdown slds-dropdown--small slds-dropdown--menu">
-                    <div class="slds-dropdown__header">
-                      <span class="slds-text-heading--label">Display As</span>
+                  <div id="menu1" class="slds-popover slds-hide">
+                    <div class="slds-dropdown slds-dropdown--small slds-dropdown--menu">
+                      <div class="slds-dropdown__header">
+                        <span class="slds-text-heading--label">Display As</span>
+                      </div>
+                      <ul class="slds-dropdown__list" role="menu">
+                        <li id="menu-0-0" class="slds-dropdown__item slds-has-icon--left slds-is-selected" href="#rename" role="menuitem option" tabindex="0">
+                          <a href="#rename" tabindex="-1" class="slds-truncate">
+                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--left">
+                              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#task2')}"></use>
+                            </svg>Table
+                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
+                              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li id="menu-1-1" href="#share" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
+                          <a href="#share" tabindex="-1" class="slds-truncate">Cards 
+                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
+                              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#kanban')}"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li id="menu-2-2" href="#delete" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
+                          <a href="#delete" tabindex="-1" class="slds-truncate">Compact List 
+                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
+                              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#side_list')}"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="slds-dropdown__list" role="menu">
-                      <li id="menu-0-0" class="slds-dropdown__item slds-has-icon--left slds-is-selected" href="#rename" role="menuitem option" tabindex="0">
-                        <a href="#rename" tabindex="-1" class="slds-truncate">
-                          <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--left">
-                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#task2')}"></use>
-                          </svg>Table
-                          <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
-                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#table')}"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li id="menu-1-1" href="#share" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
-                        <a href="#share" tabindex="-1" class="slds-truncate">Cards 
-                          <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
-                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#kanban')}"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li id="menu-2-2" href="#delete" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
-                        <a href="#delete" tabindex="-1" class="slds-truncate">Compact List 
-                          <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon--right">
-                            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#side_list')}"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="slds-button-group slds-button-space-left">
-                <button class="slds-button slds-button--icon-border slds-not-selected">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#chart')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Chart</span>
-                </button>
-                <button class="slds-button slds-button--icon-border slds-not-selected">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Filter List</span>
-                </button>
-                <button class="slds-button slds-button--icon-more">
-                  <svg aria-hidden="true" class="slds-button__icon">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#sort')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">Sort</span>
-                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-                    <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-                  </svg>
-                  <span class="slds-assistive-text">More</span>
-                </button>
-              </div>
-              <div class="slds-button-group">
-                <button class="slds-button slds-button--neutral">Add Contact</button>
-                <div class="slds-button--last">
-                  <button class="slds-button slds-button--icon-border-filled">
+                <div class="slds-button-group slds-button-space-left">
+                  <button class="slds-button slds-button--icon-border slds-not-selected">
                     <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#chart')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Chart</span>
+                  </button>
+                  <button class="slds-button slds-button--icon-border slds-not-selected">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Filter List</span>
+                  </button>
+                  <button class="slds-button slds-button--icon-more">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#sort')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Sort</span>
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
                       <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
                     </svg>
-                    <span class="slds-assistive-text">More Actions</span>
+                    <span class="slds-assistive-text">More</span>
                   </button>
                 </div>
-                <div id="menu2" class="slds-popover slds-hide">
-                  <div class="slds-dropdown slds-dropdown--right slds-dropdown--medium slds-dropdown--menu" style="margin-right:-1rem;">
-                    <ul class="slds-dropdown__list" role="menu">
-                      <li id="menu-3-0" href="#rename" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="0">
-                        <a href="#rename" tabindex="-1" class="slds-truncate">Action Item One</a>
-                      </li>
-                      <li id="menu-4-1" href="#share" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
-                        <a href="#share" tabindex="-1" class="slds-truncate">Action Item One</a>
-                      </li>
-                    </ul>
+                <div class="slds-button-group">
+                  <button class="slds-button slds-button--neutral">Add Contact</button>
+                  <div class="slds-button--last">
+                    <button class="slds-button slds-button--icon-border-filled">
+                      <svg aria-hidden="true" class="slds-button__icon">
+                        <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                      </svg>
+                      <span class="slds-assistive-text">More Actions</span>
+                    </button>
+                  </div>
+                  <div id="menu2" class="slds-popover slds-hide">
+                    <div class="slds-dropdown slds-dropdown--right slds-dropdown--medium slds-dropdown--menu" style="margin-right:-1rem;">
+                      <ul class="slds-dropdown__list" role="menu">
+                        <li id="menu-3-0" href="#rename" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="0">
+                          <a href="#rename" tabindex="-1" class="slds-truncate">Action Item One</a>
+                        </li>
+                        <li id="menu-4-1" href="#share" class="slds-dropdown__item slds-has-icon--left" role="menuitem option" tabindex="-1">
+                          <a href="#share" tabindex="-1" class="slds-truncate">Action Item One</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <p class="slds-text-body--small slds-m-top--x-small">10 items, sorted by name</p>
         </div>
-        <p class="slds-text-body--small slds-m-top--x-small">10 items, sorted by name</p>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
-    </div>
-  </body>
+        <!-- Margin -->
+        <div class="components-margin" />
+      </div><!-- ./slds end -->
+    </apex:define>
+  </apex:composition>
 </html>
 </apex:page>

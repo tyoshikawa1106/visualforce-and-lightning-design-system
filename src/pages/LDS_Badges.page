@@ -1,20 +1,17 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <head>
-    <title>Salesforce Lightning Design System Trailhead Module</title>
-    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <apex:include pageName="LDS_CommonCss" />
-  </head>
-  <body>
-    <div class="slds">
-      <c:LDS_SectionHeader title="Badges" />
-      <span class="slds-badge">Label</span>
-      <span class="slds-badge slds-theme--default">Label</span>
-      <span class="slds-badge slds-theme--shade">Label</span>
-      <span class="slds-badge slds-theme--inverse">Label</span>
-      <!-- Margin -->
-      <div class="components-margin" />
-    </div>
-  </body>
+  <apex:composition template="LDS_ApplicationTemplate">
+    <apex:define name="content">
+      <div class="slds">
+        <c:LDS_SectionHeader title="Badges" />
+        <span class="slds-badge">Label</span>
+        <span class="slds-badge slds-theme--default">Label</span>
+        <span class="slds-badge slds-theme--shade">Label</span>
+        <span class="slds-badge slds-theme--inverse">Label</span>
+        <!-- Margin -->
+        <div class="components-margin" />
+      </div><!-- ./slds end -->
+    </apex:define>
+  </apex:composition>
 </html>
 </apex:page>

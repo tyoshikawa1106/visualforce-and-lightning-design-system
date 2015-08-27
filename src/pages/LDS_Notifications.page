@@ -1,88 +1,85 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <head>
-    <title>Salesforce Lightning Design System Trailhead Module</title>
-    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <apex:include pageName="LDS_CommonCss" />
-  </head>
-  <body>
-    <div class="slds">
-      <c:LDS_SectionHeader title="Notifications - Base" />
-      <div class="slds-notify slds-notify--alert slds-theme--inverse-text slds-theme--alert-texture" role="alert">
-        <span class="slds-assistive-text">Info</span>
-        <button class="slds-button slds-notify__close">
-          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
-            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-          </svg>
-          <span class="slds-assistive-text">Close</span>
-        </button>
-        <h2>Base System Alert</h2>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
+  <apex:composition template="LDS_ApplicationTemplate">
+    <apex:define name="content">
+      <div class="slds">
+        <c:LDS_SectionHeader title="Notifications - Base" />
+        <div class="slds-notify slds-notify--alert slds-theme--inverse-text slds-theme--alert-texture" role="alert">
+          <span class="slds-assistive-text">Info</span>
+          <button class="slds-button slds-notify__close">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+            </svg>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2>Base System Alert</h2>
+        </div>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Notifications - Alert" />
-      <div class="demo--alert">
-        <!-- default -->
-        <div class="slds-notify slds-notify--alert slds-theme--alert-texture" role="alert">
-          <span class="slds-assistive-text">Info</span>
-          <button class="slds-button close slds-icon--small">
-            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-            </svg>
-            <span class="slds-assistive-text">Close</span>
-          </button>
-          <h2>
-            <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
-            </svg>Base System Alert</h2>
+        <c:LDS_SectionHeader title="Notifications - Alert" />
+        <div class="demo--alert">
+          <!-- default -->
+          <div class="slds-notify slds-notify--alert slds-theme--alert-texture" role="alert">
+            <span class="slds-assistive-text">Info</span>
+            <button class="slds-button close slds-icon--small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2>
+              <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
+              </svg>Base System Alert</h2>
+          </div>
+          <!-- success -->
+          <div class="slds-notify slds-notify--alert slds-theme--success slds-theme--alert-texture" role="alert">
+            <span class="slds-assistive-text">Info</span>
+            <button class="slds-button close slds-icon--small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2>
+              <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
+              </svg>Base System Alert</h2>
+          </div>
+          <!-- error -->
+          <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
+            <span class="slds-assistive-text">Info</span>
+            <button class="slds-button close slds-icon--small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2>
+              <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
+              </svg>Base System Alert</h2>
+          </div>
+          <!-- offline -->
+          <div class="slds-notify slds-notify--alert slds-theme--offline slds-theme--alert-texture" role="alert">
+            <span class="slds-assistive-text">Info</span>
+            <button class="slds-button close slds-icon--small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2>
+              <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+                <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
+              </svg>Base System Alert</h2>
+          </div>
         </div>
-        <!-- success -->
-        <div class="slds-notify slds-notify--alert slds-theme--success slds-theme--alert-texture" role="alert">
-          <span class="slds-assistive-text">Info</span>
-          <button class="slds-button close slds-icon--small">
-            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-            </svg>
-            <span class="slds-assistive-text">Close</span>
-          </button>
-          <h2>
-            <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
-            </svg>Base System Alert</h2>
-        </div>
-        <!-- error -->
-        <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
-          <span class="slds-assistive-text">Info</span>
-          <button class="slds-button close slds-icon--small">
-            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-            </svg>
-            <span class="slds-assistive-text">Close</span>
-          </button>
-          <h2>
-            <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
-            </svg>Base System Alert</h2>
-        </div>
-        <!-- offline -->
-        <div class="slds-notify slds-notify--alert slds-theme--offline slds-theme--alert-texture" role="alert">
-          <span class="slds-assistive-text">Info</span>
-          <button class="slds-button close slds-icon--small">
-            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-            </svg>
-            <span class="slds-assistive-text">Close</span>
-          </button>
-          <h2>
-            <svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
-              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#email')}"></use>
-            </svg>Base System Alert</h2>
-        </div>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
-    </div>
-  </body>
+        <!-- Margin -->
+        <div class="components-margin" />
+      </div><!-- ./slds end -->
+    </apex:define>
+  </apex:composition>
 </html>
 </apex:page>

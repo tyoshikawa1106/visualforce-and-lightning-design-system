@@ -1,185 +1,182 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <head>
-    <title>Salesforce Lightning Design System Trailhead Module</title>
-    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <apex:include pageName="LDS_CommonCss" />
-  </head>
-  <body>
-    <div class="slds">
-      <c:LDS_SectionHeader title="Buttons - Base" />
-      <button class="slds-button">Button</button>
-      <!-- Margin -->
-      <div class="components-margin" />
+  <apex:composition template="LDS_ApplicationTemplate">
+    <apex:define name="content">
+      <div class="slds">
+        <c:LDS_SectionHeader title="Buttons - Base" />
+        <button class="slds-button">Button</button>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Neutral" />
-      <button class="slds-button slds-button--neutral">Button neutral</button>
-      <a href="#" class="slds-button slds-button--neutral">Anchor Button Neutral</a>
-      <button class="slds-button slds-button--neutral" disabled="">Disabled</button>
-      <button class="slds-button slds-button--neutral slds-button--small">Button Small</button>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Buttons - Neutral" />
+        <button class="slds-button slds-button--neutral">Button neutral</button>
+        <a href="#" class="slds-button slds-button--neutral">Anchor Button Neutral</a>
+        <button class="slds-button slds-button--neutral" disabled="">Disabled</button>
+        <button class="slds-button slds-button--neutral slds-button--small">Button Small</button>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Neutral Icon" />
-      <button class="slds-button slds-button--neutral">
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--left">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#download')}"></use>
-        </svg>Download</button>
-        <button class="slds-button slds-button--neutral">Download
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--right">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#download')}"></use>
-        </svg>
-      </button>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Buttons - Neutral Icon" />
+        <button class="slds-button slds-button--neutral">
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--left">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#download')}"></use>
+          </svg>Download</button>
+          <button class="slds-button slds-button--neutral">Download
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--right">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#download')}"></use>
+          </svg>
+        </button>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Brand" />
-      <button class="slds-button slds-button--brand">Button Brand</button>
-      <a href="#" class="slds-button slds-button--brand">Anchor Button Brand</a>
-      <button class="slds-button slds-button--brand" disabled="">Disabled</button>
-      <button class="slds-button slds-button--brand slds-button--small">Button Small</button>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Buttons - Brand" />
+        <button class="slds-button slds-button--brand">Button Brand</button>
+        <a href="#" class="slds-button slds-button--brand">Anchor Button Brand</a>
+        <button class="slds-button slds-button--brand" disabled="">Disabled</button>
+        <button class="slds-button slds-button--brand slds-button--small">Button Small</button>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Inverse" />
-      <div class="demo--inverse">
-        <button class="slds-button slds-button--inverse">Button Inverse</button>
-        <button class="slds-button slds-button--inverse" disabled="">Disabled</button>
-        <button class="slds-button slds-button--inverse slds-button--small">Button Small</button>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Buttons - Inverse" />
+        <div class="demo--inverse">
+          <button class="slds-button slds-button--inverse">Button Inverse</button>
+          <button class="slds-button slds-button--inverse" disabled="">Disabled</button>
+          <button class="slds-button slds-button--inverse slds-button--small">Button Small</button>
+        </div>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Icon" />
-      <button class="slds-button slds-button--icon-bare">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-container">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-container" disabled="">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-border">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-border" disabled="">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-border-filled">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-border-filled" disabled="">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <button class="slds-button slds-button--icon-border-filled slds-button--icon-small">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-      </button>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Buttons - Icon" />
+        <button class="slds-button slds-button--icon-bare">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-container">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-container" disabled="">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-border">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-border" disabled="">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-border-filled" disabled="">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <button class="slds-button slds-button--icon-border-filled slds-button--icon-small">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+        </button>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Buttons - Icon Sizing" />
-      <button class="slds-button slds-button--icon-bare">
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Show More</span>
-      </button>
-      <button class="slds-button slds-button--icon-bare">
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Show More</span>
-      </button>
-      <button class="slds-button slds-button--icon-bare">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-        </svg>
-        <span class="slds-assistive-text">close</span>
-      </button>
-      <button class="slds-button slds-button--icon-bare">
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
-        </svg>
-        <span class="slds-assistive-text">close</span>
-      </button>
-      <!-- Margin -->
-      <div class="components-margin" />
-
-      <c:LDS_SectionHeader title="Buttons - Icon More" />
-      <button class="slds-button slds-button--icon-more" aria-haspopup="true">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-        </svg>
-      </button>
-      <button class="slds-button slds-button--neutral slds-button--icon-more" aria-haspopup="true">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Settings</span>
-        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
-        </svg>
-      </button>
-      <!-- Margin -->
-      <div class="components-margin" />
-
-      <c:LDS_SectionHeader title="Buttons - Icon Stateful" />
-      <button class="slds-button slds-button--icon-border slds-not-selected">
-        <svg aria-hidden="true" class="slds-button__icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#like')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Like</span>
-      </button>
-      <!-- Margin -->
-      <div class="components-margin" />
-
-      <c:LDS_SectionHeader title="Buttons - Icon Inverse" />
-      <div class="demo--inverse">
-        <button class="slds-button">
-          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+        <c:LDS_SectionHeader title="Buttons - Icon Sizing" />
+        <button class="slds-button slds-button--icon-bare">
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+        <button class="slds-button slds-button--icon-bare">
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+        <button class="slds-button slds-button--icon-bare">
+          <svg aria-hidden="true" class="slds-button__icon">
             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
           </svg>
           <span class="slds-assistive-text">close</span>
         </button>
-        <button class="slds-button" disabled="">
-          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+        <button class="slds-button slds-button--icon-bare">
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
           </svg>
           <span class="slds-assistive-text">close</span>
         </button>
-      </div>
-      <!-- Margin -->
-      <div class="components-margin" />
-    </div>
-  </body>
+        <!-- Margin -->
+        <div class="components-margin" />
+
+        <c:LDS_SectionHeader title="Buttons - Icon More" />
+        <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+        </button>
+        <button class="slds-button slds-button--neutral slds-button--icon-more" aria-haspopup="true">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Settings</span>
+          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+          </svg>
+        </button>
+        <!-- Margin -->
+        <div class="components-margin" />
+
+        <c:LDS_SectionHeader title="Buttons - Icon Stateful" />
+        <button class="slds-button slds-button--icon-border slds-not-selected">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#like')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Like</span>
+        </button>
+        <!-- Margin -->
+        <div class="components-margin" />
+
+        <c:LDS_SectionHeader title="Buttons - Icon Inverse" />
+        <div class="demo--inverse">
+          <button class="slds-button">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+            </svg>
+            <span class="slds-assistive-text">close</span>
+          </button>
+          <button class="slds-button" disabled="">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+              <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+            </svg>
+            <span class="slds-assistive-text">close</span>
+          </button>
+        </div>
+        <!-- Margin -->
+        <div class="components-margin" />
+      </div><!-- ./slds end -->
+    </apex:define>
+  </apex:composition>
 </html>
 </apex:page>

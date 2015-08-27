@@ -1,84 +1,81 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">    
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <head>
-    <title>Salesforce Lightning Design System Trailhead Module</title>
-    <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <apex:include pageName="LDS_CommonCss" />
-  </head>
-  <body>
-    <div class="slds">
-      <c:LDS_SectionHeader title="Icons - Base" />
-      <span>
-        <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#announcement')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Announcement Icon</span>
-      </span>
-      <span class="slds-icon__container slds-icon__container--circle slds-icon-action-description">
-        <svg aria-hidden="true" class="slds-icon slds-icon--small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#description')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Description Icon</span>
-      </span>
-      <span class="slds-icon__container slds-icon-standard-account">
-        <svg aria-hidden="true" class="slds-icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Account Icon</span>
-      </span>
-      <span class="slds-icon__container">
-        <svg aria-hidden="true" class="slds-icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/doctype-sprite/svg/symbols.svg#xml')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Doctype Icon</span>
-      </span>
-      <!-- Margin -->
-      <div class="components-margin" />
+  <apex:composition template="LDS_ApplicationTemplate">
+    <apex:define name="content">
+      <div class="slds">
+        <c:LDS_SectionHeader title="Icons - Base" />
+        <span>
+          <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#announcement')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Announcement Icon</span>
+        </span>
+        <span class="slds-icon__container slds-icon__container--circle slds-icon-action-description">
+          <svg aria-hidden="true" class="slds-icon slds-icon--small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/action-sprite/svg/symbols.svg#description')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Description Icon</span>
+        </span>
+        <span class="slds-icon__container slds-icon-standard-account">
+          <svg aria-hidden="true" class="slds-icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Account Icon</span>
+        </span>
+        <span class="slds-icon__container">
+          <svg aria-hidden="true" class="slds-icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/doctype-sprite/svg/symbols.svg#xml')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Doctype Icon</span>
+        </span>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Icons - Colors" />
-      <span class="slds-icon__container slds-icon-standard-case">
-        <svg aria-hidden="true" class="slds-icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#case')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Case icon </span>
-      </span>
-      <span class="slds-icon__container">
-        <svg aria-hidden="true" class="slds-icon slds-icon-text-default slds-icon--small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#lock')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Lock Icon</span>
-      </span>
-      <!-- Margin -->
-      <div class="components-margin" />
+        <c:LDS_SectionHeader title="Icons - Colors" />
+        <span class="slds-icon__container slds-icon-standard-case">
+          <svg aria-hidden="true" class="slds-icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#case')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Case icon </span>
+        </span>
+        <span class="slds-icon__container">
+          <svg aria-hidden="true" class="slds-icon slds-icon-text-default slds-icon--small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#lock')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Lock Icon</span>
+        </span>
+        <!-- Margin -->
+        <div class="components-margin" />
 
-      <c:LDS_SectionHeader title="Icons - Sizes" />
-      <span class="slds-icon__container">
-        <svg aria-hidden="true" class="slds-icon slds-icon-text-warning slds-icon--x-small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Warning Icon</span>
-      </span>
-      <span class="slds-icon__container slds-icon-standard-account">
-        <svg aria-hidden="true" class="slds-icon slds-icon--small">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Standard Account Icon</span>
-      </span>
-      <span class="slds-icon__container slds-icon-standard-case">
-        <svg aria-hidden="true" class="slds-icon">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#case')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Small Case Icon</span>
-      </span>
-      <span class="slds-icon__container slds-icon-standard-solution">
-        <svg aria-hidden="true" class="slds-icon slds-icon--large">
-          <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#solution')}"></use>
-        </svg>
-        <span class="slds-assistive-text">Large Solution Icon</span>
-      </span>
-      <!-- Margin -->
-      <div class="components-margin" />
-    </div>
-  </body>
+        <c:LDS_SectionHeader title="Icons - Sizes" />
+        <span class="slds-icon__container">
+          <svg aria-hidden="true" class="slds-icon slds-icon-text-warning slds-icon--x-small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Warning Icon</span>
+        </span>
+        <span class="slds-icon__container slds-icon-standard-account">
+          <svg aria-hidden="true" class="slds-icon slds-icon--small">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Standard Account Icon</span>
+        </span>
+        <span class="slds-icon__container slds-icon-standard-case">
+          <svg aria-hidden="true" class="slds-icon">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#case')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Small Case Icon</span>
+        </span>
+        <span class="slds-icon__container slds-icon-standard-solution">
+          <svg aria-hidden="true" class="slds-icon slds-icon--large">
+            <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/standard-sprite/svg/symbols.svg#solution')}"></use>
+          </svg>
+          <span class="slds-assistive-text">Large Solution Icon</span>
+        </span>
+        <!-- Margin -->
+        <div class="components-margin" />
+      </div><!-- ./slds end -->
+    </apex:define>
+  </apex:composition>
 </html>
 </apex:page>
