@@ -5,6 +5,8 @@
 </a>
 
 <p>Visualforce &amp; Lightning Design SystemのSample Codeです。</p>
-<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827062222.png" />
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827183119.png" />
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827183224.png" />
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827062701.png" />
