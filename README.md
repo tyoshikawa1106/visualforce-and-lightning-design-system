@@ -4,9 +4,11 @@
     src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
-<p>Visualforce &amp; Lightning Design SystemのSample Codeです。</p>
+#### Acitivity Time Line
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827183119.png" />
 
+#### Buttons
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827183224.png" />
 
+#### Package Install
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150827/20150827062701.png" />
