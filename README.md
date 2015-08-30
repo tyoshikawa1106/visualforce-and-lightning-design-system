@@ -1,5 +1,5 @@
 ## visualforce-lightning-design-system-sample
-<a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t28000000MWNc" target="_blank">
+<a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t28000000MWXZ" target="_blank">
   <img alt="Deploy to Salesforce"
     src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
